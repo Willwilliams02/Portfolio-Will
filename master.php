@@ -6,9 +6,10 @@
    $subject = 'Message sent from website';
    $message = $_POST['message'];
    $name = $_POST['name'];
+   $email= $_POST['email'];
       
    // Send it
-   $sent = mail($to, $subject, $message);
+   $sent = mail($to, $subject, $message,$name,$email);
    if($sent) {
    echo 'Your message has been sent successfully!';
    } else {
