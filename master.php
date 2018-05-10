@@ -5,6 +5,8 @@
    $from='ww4254503@gmail.com'
    $subject = 'Message sent from website';
    $message = $_POST['message'];
+   $name = $_POST['name'];
+      
    // Send it
    $sent = mail($to, $subject, $message);
    if($sent) {
