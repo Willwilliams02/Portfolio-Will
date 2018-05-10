@@ -27,7 +27,7 @@
 <body>
 <header class="header">
    Will Williams
-   <img class="img-header" src="../pic/Video_game.png">
+   <img class="img-header" src="./pic/Video_game.png">
    <br>
    My Portfolio
 </header>
@@ -42,7 +42,7 @@
 <div class="col-sm-6" id="messagefield">
       <div class="home-article-text">
         <h3 style=" border-bottom-style: solid;border-bottom-color: #427dd7;">Send me a message!</h3>  
-        <form method="post" action="master.php">
+        <form method="post" action="contact.html">
     <p>
         <label for="name">Name</label><br>
         <input type="text" id="name" name="name" style="color:black;" />
@@ -59,6 +59,23 @@
         <input type="submit" name="send" value="Send message" url="contact.html" style="color:black;" />
     </p>
 </form>
+          <?php
+   if(isset($_POST['send'])) {
+   // Prepare the email
+   $to = 'Change
+willwilliams02ww4254503@gmail.com';
+   $from='willwilliams02ww4254503@gmail.com'
+   $subject = 'Message sent from website';
+   $message = $_POST['message'];
+   // Send it
+   $sent = mail($to, $subject, $message);
+   if($sent) {
+   echo 'Your message has been sent successfully!';
+   } else {
+   echo 'Sorry, your message could not send.';
+   }
+   }
+?>
       </div>  
     </div>
     
