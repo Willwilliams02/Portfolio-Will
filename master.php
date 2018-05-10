@@ -2,7 +2,7 @@
    if(isset($_POST['send'])) {
    // Prepare the email
    $to = 'willwilliams02ww4254503@gmail.com';
-   $from='willwilliams02ww4254503@gmail.com'
+   $from='ww4254503@gmail.com'
    $subject = 'Message sent from website';
    $message = $_POST['message'];
    // Send it
