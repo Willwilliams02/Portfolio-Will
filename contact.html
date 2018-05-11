@@ -42,41 +42,10 @@
 </nav>
 <div class="col-sm-6" id="messagefield">
       <div class="home-article-text">
-        <h3 style=" border-bottom-style: solid;border-bottom-color: #427dd7;">Send me a message!</h3>  
-        <form method="post" action="contact.html">
-    <p>
-        <label for="name">Name</label><br>
-        <input type="text" id="name" name="name" style="color:black;" />
-    </p>
-    <p>
-        <label for="email">Email</label><br>
-        <input type="text" id="email" name="email" style="color:black;" />
-    </p>
-    <p>
-        <label for="message">Message</label><br>
-        <textarea id="message" name="message" rows="6" cols="30" style="color:black;"></textarea>
-    </p>
-    <p>
-        <input type="submit" name="send" value="Send message" url="contact.html" style="color:black;" />
-    </p>
-</form>
-          <?php
-   if(isset($_POST['send'])) {
-   // Prepare the email
-   $to = 'willwilliams02ww4254503@gmail.com';
-   $from='Ww4254503will@gmail.com'
-   $subject = 'Message sent from website';
-   $message = $_POST['message'];
-   // Send it
-   $sent = mail($to, $subject, $message);
-   if($sent) {
-   echo 'Your message has been sent successfully!';
-   } else {
-   echo 'Sorry, your message could not send.';
-   }
-   }
-?>
+          <h3 style=" border-bottom-style: solid;border-bottom-color: #427dd7;"> Email</h3>
+          <h4>willwilliams02@icloud.com<br>william.williams@students.jmcss.org</h4>
       </div>  
+    
     </div>
     
     
